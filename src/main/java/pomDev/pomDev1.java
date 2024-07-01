@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class pomDev1 {
 
-	//Test
+	//Test 15:24
 	public String Dev = "//a[@name='Development']";
 	public String QA = "//a[@name='QA']";
 	public WebDriver driver = null;
