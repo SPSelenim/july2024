@@ -27,7 +27,7 @@ public class testHome {
 		System.out.println("myTestNG : ");
 		try {
 			pomHome1 ph = new pomHome1(driver);
-			ph.sendFirstName("Satis");
+			ph.sendFirstName("Sateeesh");
 			ph.sendLastName("xyzTest");
 			Thread.sleep(2000);
 		} catch (Exception e) {
