@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import pomDev.pomDev1;
 
 //12:10 pm : 13:20
-//15:00 pm : 
+//15:00 pm :  15: 40
 
 public class testDev {
 
@@ -41,7 +41,7 @@ public class testDev {
 	}
 
 	@Test
-	public void f1() {
+	public void f1devQA() {
 		System.out.println("myTestNG1 : QA ");
 		try {
 			pomDev1 dev=new pomDev1(driver);
@@ -54,6 +54,20 @@ public class testDev {
 
 	}
 
+
+	@Test
+	public void f1() {
+		System.out.println("myTestNG1 : DevQA ");
+		try {
+			pomDev1 dev=new pomDev1(driver);
+			dev.clickdevQA();
+//org.testng.Assert.assertEquals(false, true);
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
 	@AfterClass
 	public void afterClass() {
 		driver.close();
